@@ -11,7 +11,7 @@ app = FastAPI(title="ZET GTFS API (cached auto-refresh)")
 # CORS za frontend pristup
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Za razvoj. U produkciji koristi točnu domenu.
+    allow_origins=["http://localhost:3000"],  # Za razvoj. U produkciji koristi točnu domenu.
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
