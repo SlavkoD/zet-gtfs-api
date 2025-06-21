@@ -10,7 +10,7 @@ app = FastAPI(title="ZET GTFS API (live ZIP access)")
 # ✅ CORS za razvoj
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # U produkciji: npr. ["https://mojfrontend.hr"]
+    allow_origins=["http://localhost:3000"],  # U produkciji: npr. ["https://mojfrontend.hr"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
